@@ -13,7 +13,7 @@ const App = () => {
       <Component.Experience />
       <Component.Tech />
       <Component.Works />
-      <Component.Feedbacks />
+      {/* <Component.Feedbacks /> */}
 
       <div className="relative z-0">
         <Component.Contact />

@@ -2,7 +2,7 @@ import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github, notion } from "../assets";
+import { github, link, notion } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -15,6 +15,7 @@ const ProjectCard = ({
   image,
   source_code_link,
   detail_link,
+  deploy_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -26,13 +27,27 @@ const ProjectCard = ({
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-contain rounded-2xl "
+            className="w-full h-full object-contain rounded-2xl"
           />
-
           <div className="absolute inset-0 flex justify-end m-35 card-img_hover">
+            {deploy_link ? (
+              <div
+                onClick={() => window.open(deploy_link, "_blank")}
+                className="bg-white mr-3 w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={link}
+                  alt="Link"
+                  className="w-[70%] h-[70%] object-contain"
+                />
+              </div>
+            ) : (
+              ""
+            )}
+
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient mr-3 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="black-gradient mr-3 w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
                 src={github}
@@ -43,15 +58,30 @@ const ProjectCard = ({
 
             <div
               onClick={() => window.open(detail_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
                 src={notion}
-                alt="GitHub"
+                alt="Notion"
                 className="w-[100%] h-[100%] object-contain"
               />
             </div>
           </div>
+        </div>
+
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[18px]">{name}</h3>
+          <p className="h-[100px] mt-2 text-secondary text-[14px]">
+            {description}
+          </p>
+        </div>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+              #{tag.name}
+            </p>
+          ))}
         </div>
       </Tilt>
     </motion.div>

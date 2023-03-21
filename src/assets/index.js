@@ -6,6 +6,11 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import githubFrame from "./githubFrame.png";
+import facebook from "./facebook.png";
+import velog from "./velog.svg";
+import linkedin from "./linkedin.png";
+import link from "./link.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -51,6 +56,11 @@ export {
   mobile,
   web,
   github,
+  githubFrame,
+  facebook,
+  velog,
+  linkedin,
+  link,
   menu,
   close,
   css,

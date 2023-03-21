@@ -37,9 +37,9 @@ const Navbar = () => {
           <img src={myLogo} alt="logo" className="w-12 h-12 object-contain" />
 
           <p className="text-white text-[18px] font-bold cursor-pointer">
-            {name}
+            <span className="blue-text-gradient">{name}</span>
             <Cursor cursorColor="#37b3ed" />
-            <span className="sm:block hidden">
+            <span className="sm:block hidden green-text-gradient">
               {info}
               <Cursor cursorColor="#37b3ed" />
             </span>

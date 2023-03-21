@@ -33,6 +33,11 @@ import {
   kais,
   kiitBg,
   ts,
+  github,
+  velog,
+  linkedin,
+  githubFrame,
+  facebook,
 } from "../assets";
 
 export const navLinks = [
@@ -52,20 +57,24 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "My GitHub",
+    icon: githubFrame,
+    link: "https://github.com/HyungJinHan",
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "My Tech Blog",
+    icon: velog,
+    link: "https://velog.io/@hyungjin_han",
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "My LinkedIn",
+    icon: linkedin,
+    link: "https://www.linkedin.com/in/hyungjinhan/",
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "My Facebook",
+    icon: facebook,
+    link: "https://www.facebook.com/hyeongjinh1",
   },
 ];
 
@@ -268,86 +277,19 @@ const projects = [
   {
     name: "AI Trainer 나 혼자 피트니스",
     description:
-      "AI 기술인 OpenCV와 MediaPip`를 활용한 실시간 자세 측정 피트니스 서비스입니다. 직접 피트니스 센터를 방문하여 대면 운동을 하는 것이 아닌, 집에서 즐길 수 있는 홈 트레이닝 서비스로, 원하는 개수를 지정해서 운동을 시작하면 자세를 실시간으로 측정하여 정확한 자세로 운동을 할 시, 개수가 올라가도록 구현했습니다. 추가적으로 챌린지 시스템을 도입하여, 정해진 시간 내에 얼마나 정확한 자세로 많은 운동을 했는지를 랭킹으로 경쟁할 수 있습니다. 또한 서비스를 이용하는 유저 외에 피트니스 센터에 가입한 회원들을 관리할 수 있는 센터 컨텐츠 관리와 간단한 회원 관리를 추가했습니다.",
+      // "AI 기술인 OpenCV와 MediaPipe를 활용한 실시간 자세 측정 피트니스 서비스입니다. 직접 피트니스 센터를 방문하여 대면 운동을 하는 것이 아닌, 집에서 즐길 수 있는 홈 트레이닝 서비스로, 원하는 개수를 지정해서 운동을 시작하면 자세를 실시간으로 측정하여 정확한 자세로 운동을 할 시, 개수가 올라가도록 구현했습니다. 추가적으로 챌린지 시스템을 도입하여, 정해진 시간 내에 얼마나 정확한 자세로 많은 운동을 했는지를 랭킹으로 경쟁할 수 있습니다. 또한 서비스를 이용하는 유저 외에 피트니스 센터에 가입한 회원들을 관리할 수 있는 센터 컨텐츠 관리와 간단한 회원 관리를 추가했습니다.",
+      "AI 기술인 OpenCV와 MediaPipe를 활용한 실시간 자세 측정 피트니스 서비스로, 집에서  간편하게 즐길 수 있는 홈 트레이닝 서비스입니다.",
     tags: [
       {
         name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "React",
+        name: "FastAPI",
         color: "green-text-gradient",
       },
       {
-        name: "Figma",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Node JS",
-        color: "pink-text-gradient",
-      },
-      {
         name: "MySQL",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "FastAPI",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Socket.io",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Kakaomap",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "MediaPipe",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "OpenCV",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "NumPy",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Pandas",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Yolov5",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Yolov5",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Jupyter Notebook",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "VS Code",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Pycharm",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "MySQL Workbench",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Google Colab",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "GitHub",
         color: "pink-text-gradient",
       },
     ],
@@ -360,50 +302,19 @@ const projects = [
   {
     name: "ChatGPT Messenger",
     description:
-      "현재 서비스를 진행 중인 `Chat GPT` 사이트를 클론하여 만든 프로젝트입니다. Open AI의 API를 사용하여 실제 AI를 통한 답변을 받을 수 있습니다. PC 뿐만이 아닌 반응형 스타일링을 통해 패드와 모바일 환경에도 적합할 수 있도록 화면을 설계했으며, 다양한 AI 모델을 선택해서 다양한 답변을 들을 수 있도록 구현했습니다. 또한 간편하게 회원가입 및 로그인이 가능하도록 Gmail을 통해 가입이 가능하며, Firebase 사용을 통해 자신이 어떠한 채팅을 했는지 내역을 확인할 수 있습니다.",
+      // "현재 서비스를 진행 중인 Chat GPT 사이트를 클론하여 만든 프로젝트입니다. Open AI의 API를 사용하여 실제 AI를 통한 답변을 받을 수 있습니다. PC 뿐만이 아닌 반응형 스타일링을 통해 패드와 모바일 환경에도 적합할 수 있도록 화면을 설계했으며, 다양한 AI 모델을 선택해서 다양한 답변을 들을 수 있도록 구현했습니다. 또한 간편하게 회원가입 및 로그인이 가능하도록 Gmail을 통해 가입이 가능하며, Firebase 사용을 통해 자신이 어떠한 채팅을 했는지 내역을 확인할 수 있습니다.",
+      "현재 서비스를 진행 중인 Chat GPT 사이트를 클론하여 만든 프로젝트입니다. Open AI의 API를 사용하여 실제 AI를 통한 답변을 받을 수 있습니다.",
     tags: [
       {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "TypeScript",
-        color: "green-text-gradient",
-      },
-      {
         name: "Next JS",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "Tailwind CSS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Node JS",
         color: "green-text-gradient",
       },
       {
         name: "Firebase",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Vercel",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Google Cloud",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "OpenAI API",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "VS Code",
-        color: "green-text-gradient",
-      },
-      {
-        name: "GitHub",
         color: "pink-text-gradient",
       },
     ],
@@ -411,51 +322,25 @@ const projects = [
     source_code_link: "https://github.com/HyungJinHan/ChatGPT_Messenger",
     detail_link:
       "https://www.notion.so/hyungjinhan/ChatGPT-Messenger-64cdb067fad74f62b2465c7924a7cc4e",
+    deploy_link: "https://chatgpt-messenger-hyungjinhan.vercel.app/",
   },
   {
     name: "그룹화 배달 서비스 배달BEE",
     description:
-      "높아지는 물가와 인건비로 인해 상승하는 배달 수수료를 절감하고자 함께 모여 배달을 시킬 수 있는 플랫폼 서비스입니다. 자신의 지역 내의 배달을 원하는 가게를 선택하고, 그룹을 만들어 한 번에 여러 음식을 배달시켜 배달 수수료를 절감하고 효율적인 배달 시장을 도모하고자 개발했습니다. 해당 그룹에 참여하여 배달할 음식을 선 결제를 하고, 참여 댓글을 남겨 인원 수 대비 배달 수수료를 절감할 수 있도록 구현하였고, 테스트용이지만 결제 기능을 추가하였습니다. 또한 서비스를 이용하는 유저 외에 플랫폼에 등록을 원하는 업주 페이지도 개발하여 적용시키게 되었습니다.",
+      // "높아지는 물가와 인건비로 인해 상승하는 배달 수수료를 절감하고자 함께 모여 배달을 시킬 수 있는 플랫폼 서비스입니다. 자신의 지역 내의 배달을 원하는 가게를 선택하고, 그룹을 만들어 한 번에 여러 음식을 배달시켜 배달 수수료를 절감하고 효율적인 배달 시장을 도모하고자 개발했습니다. 해당 그룹에 참여하여 배달할 음식을 선 결제를 하고, 참여 댓글을 남겨 인원 수 대비 배달 수수료를 절감할 수 있도록 구현하였고, 테스트용이지만 결제 기능을 추가하였습니다. 또한 서비스를 이용하는 유저 외에 플랫폼에 등록을 원하는 업주 페이지도 개발하여 적용시키게 되었습니다.",
+      "높아지는 물가와 인건비로 인해 상승하는 배달 수수료를 절감하고자 함께 모여 배달을 시킬 수 있는 플랫폼 서비스입니다.",
     tags: [
       {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-      {
         name: "React",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Figma",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "Node JS",
-        color: "blue-text-gradient",
+        color: "green-text-gradient",
       },
       {
         name: "MySQL",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Kakaomap",
         color: "pink-text-gradient",
-      },
-      {
-        name: "Kakaopay",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "VS Code",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MySQL Workbench",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "GitHub",
-        color: "blue-text-gradient",
       },
     ],
     image: deliveryBee,
@@ -464,57 +349,22 @@ const projects = [
       "https://www.notion.so/hyungjinhan/BEE-3cb0ec9c54504933b14de75f9945a372",
   },
   {
-    name: "thiredweb Crowdfunding 사이트",
+    name: "Crowdfunding 사이트",
     description:
-      "이번 프로젝트는 실제 이더리움을 통한 개발 서버의 테스트 네트워크를 통해 GoerliETH를 사용하여 캠페인을 생성하고, 해당 캠페인을 진행하기 위해 후원을 받을 수 있는 사이트입니다. 현재 다양한 Crowdfunding 사이트에 아이디어를 착안하여, 자신이 진행하고자 하는 캠페인을 암호화폐로 후원받을 수 있습니다. 로그인 및 암호화폐 지갑 연동 등, 후원과 캠페인 생성을 위해 필요로 하는 정보는 MetaMask를 통해 진행되며, GOERLI FAUCET 사이트를 통해 해당 사이트에서 지원되는 화폐를 받아 서비스를 이용해보실 수 있습니다. 해당 프로젝트의 서비스를 이용하는 동안 실제 화폐는 사용되지 않습니다!",
+      // "이번 프로젝트는 실제 이더리움을 통한 개발 서버의 테스트 네트워크를 통해 GoerliETH를 사용하여 캠페인을 생성하고, 해당 캠페인을 진행하기 위해 후원을 받을 수 있는 사이트입니다. 현재 다양한 Crowdfunding 사이트에 아이디어를 착안하여, 자신이 진행하고자 하는 캠페인을 암호화폐로 후원받을 수 있습니다. 로그인 및 암호화폐 지갑 연동 등, 후원과 캠페인 생성을 위해 필요로 하는 정보는 MetaMask를 통해 진행되며, GOERLI FAUCET 사이트를 통해 해당 사이트에서 지원되는 화폐를 받아 서비스를 이용해보실 수 있습니다. 해당 프로젝트의 서비스를 이용하는 동안 실제 화폐는 사용되지 않습니다!",
+      "암호화폐를 통해 캠페인 또는 다양한 서비스를 생성하고 기부를 받을 수 있는 크라우드펀딩 사이트로, 테스트용으로 진행되기 때문에 실제 화폐를 사용하지 않습니다.",
     tags: [
       {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-      {
         name: "React",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Vite",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
         color: "blue-text-gradient",
-      },
-      {
-        name: "Node JS",
-        color: "green-text-gradient",
       },
       {
         name: "Solidity",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "thirdweb",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Vercel",
         color: "green-text-gradient",
       },
       {
-        name: "Ethereum",
+        name: "thirdweb",
         color: "pink-text-gradient",
-      },
-      {
-        name: "MetaMask",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "VS Code",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "GitHub",
-        color: "blue-text-gradient",
       },
     ],
     image: crowdFunding,
@@ -522,146 +372,75 @@ const projects = [
       "https://github.com/HyungJinHan/Web3_Crowdfunding_Project",
     detail_link:
       "https://www.notion.so/hyungjinhan/thiredweb-Crowdfunding-dccab699ae0f4e35a5195ec282ca1d60",
+    deploy_link: "https://web3-crowdfunding-project-two.vercel.app/",
   },
   {
     name: "Firebase 채팅 어플리케이션",
     description:
-      "간단하게 유저들끼리 채팅을 할 수 있는 채팅 어플리케이션입니다. 간단한 회원가입을 통해 채팅 서비스를 이용할 수 있으며, 가입한 유저와의 개인 채팅이 가능하며, 동일한 관심사를 갖고 있는 유저들끼리 채팅할 수 있는 오픈 채팅방을 생성 및 참여하여 채팅을 즐길 수 있는 어플리케이션입니다. 또한 실제로 가입한 유저들이 언제 가입했는지 간단하게 확인할 수 있는 화면을 구성했습니다. 웹 어플리케이션이 아닌, 실제로 빌드 작업이 진행되어 각 데스크탑에 exe 파일을 설치하여 이용할 수 있는 채팅 앱입니다.",
+      // "간단하게 유저들끼리 채팅을 할 수 있는 채팅 어플리케이션입니다. 간단한 회원가입을 통해 채팅 서비스를 이용할 수 있으며, 가입한 유저와의 개인 채팅이 가능하며, 동일한 관심사를 갖고 있는 유저들끼리 채팅할 수 있는 오픈 채팅방을 생성 및 참여하여 채팅을 즐길 수 있는 어플리케이션입니다. 또한 실제로 가입한 유저들이 언제 가입했는지 간단하게 확인할 수 있는 화면을 구성했습니다. 웹 어플리케이션이 아닌, 실제로 빌드 작업이 진행되어 각 데스크탑에 exe 파일을 설치하여 이용할 수 있는 채팅 앱입니다.",
+      "간단하게 유저들끼리 채팅을 할 수 있는 채팅 어플리케이션으로, 실제로 빌드 작업이 진행되어 각 데스크탑에 exe 파일을 설치하여 이용할 수 있는 채팅 앱입니다.",
     tags: [
       {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "TypeScript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "React",
-        color: "green-text-gradient",
-      },
-      {
         name: "Next JS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Styled Components",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "Electron",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Ant Design",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Node JS",
-        color: "blue-text-gradient",
+        color: "green-text-gradient",
       },
       {
         name: "Firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "VS Code",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MySQL Workbench",
         color: "pink-text-gradient",
-      },
-      {
-        name: "GitHub",
-        color: "blue-text-gradient",
       },
     ],
     image: firebaseChat,
     source_code_link: "https://github.com/HyungJinHan/firebase_chat_site",
     detail_link:
       "https://www.notion.so/hyungjinhan/Firebase-081db98431114e13b7f5d61bd77038d3",
+    deploy_link: "https://github.com/HyungJinHan/firebase_chat_site/releases",
   },
   {
     name: "Airbnb Clone Site",
     description:
-      "현재 서비스를 진행 중인 Airbnb 사이트를 클론하여 만든 프로젝트입니다. Mapbox와 DatePicker 등, 다양한 오픈소스들을 사용하여 실제 실제 서비스 중인 Airbnb와 최대한 유사하게 제작하였습니다. PC 뿐만이 아닌 반응형 스타일링을 통해 패드와 모바일 환경에도 적합할 수 있도록 화면을 설계했으며, 화면에 많은 비중을 차지하는 Mapbox의 경우 큰 PC 화면에서만 보이도록 작업했습니다. 현재로써는 데이터 베이스를 사용하지 않은 간단한 프로젝트로 구현하게 되었지만, 추후에 많은 숙소 위치 등을 공개된 데이터를 통해 정보를 불러와 작업을 진행할 예정입니다!",
+      // "현재 서비스를 진행 중인 Airbnb 사이트를 클론하여 만든 프로젝트입니다. Mapbox와 DatePicker 등, 다양한 오픈소스들을 사용하여 실제 실제 서비스 중인 Airbnb와 최대한 유사하게 제작하였습니다. PC 뿐만이 아닌 반응형 스타일링을 통해 패드와 모바일 환경에도 적합할 수 있도록 화면을 설계했으며, 화면에 많은 비중을 차지하는 Mapbox의 경우 큰 PC 화면에서만 보이도록 작업했습니다. 현재로써는 데이터 베이스를 사용하지 않은 간단한 프로젝트로 구현하게 되었지만, 추후에 많은 숙소 위치 등을 공개된 데이터를 통해 정보를 불러와 작업을 진행할 예정입니다!",
+      "현재 서비스를 진행 중인 Airbnb 사이트를 클론하여 만든 프로젝트입니다. 다양한 오픈 소스들을 사용하여 실제 서비스와 유사하게 제작하였습니다.",
     tags: [
       {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "TypeScript",
-        color: "green-text-gradient",
-      },
-      {
         name: "Next JS",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "Tailwind CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Node JS",
-        color: "blue-text-gradient",
-      },
-
-      {
-        name: "Vercel",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Mapbox",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "VS Code",
         color: "green-text-gradient",
       },
       {
-        name: "GitHub",
-        color: "blue-text-gradient",
+        name: "Mapbox",
+        color: "pink-text-gradient",
       },
     ],
     image: airbnb,
     source_code_link: "https://github.com/HyungJinHan/Airbnb_Clone_Project",
     detail_link:
       "https://www.notion.so/hyungjinhan/Airbnb-Clone-Site-c4392ee163e94f53af3d58ecff57996c",
+    deploy_link: "https://airbnb-clone-project-bay.vercel.app/",
   },
   {
     name: "영화 검색 사이트 Moggle",
     description:
-      "네이버 검색 API를 활용하여 간단한 토이 프로젝트로 제작한 영화 검색 사이트입니다. 다양한 영화 속 자신이 원하는 영화를 찾을 수 있도록 국가, 장르 등 다양한 선택지를 제공하여 영화를 검색할 수 있게 제작했습니다. 또한 구글을 레퍼런스로 하여 구글 검색과 비슷한 느낌으로 UI를 설계했습니다.",
+      // "네이버 검색 API를 활용하여 간단한 토이 프로젝트로 제작한 영화 검색 사이트입니다. 다양한 영화 속 자신이 원하는 영화를 찾을 수 있도록 국가, 장르 등 다양한 선택지를 제공하여 영화를 검색할 수 있게 제작했습니다. 또한 구글을 레퍼런스로 하여 구글 검색과 비슷한 느낌으로 UI를 설계했습니다.",
+      "네이버 검색 API를 활용하여 간단한 토이 프로젝트로 제작한 영화 검색 사이트로, 다양한 검색 옵션을 통해 보다 정확한 영화 검색이 가능합니다.",
     tags: [
       {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-      {
         name: "React",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Figma",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "Node JS",
-        color: "blue-text-gradient",
+        color: "green-text-gradient",
       },
       {
         name: "Naver API",
-        color: "green-text-gradient",
-      },
-      {
-        name: "VS Code",
-        color: "green-text-gradient",
-      },
-      {
-        name: "GitHub",
-        color: "blue-text-gradient",
+        color: "pink-text-gradient",
       },
     ],
     image: moogle,
