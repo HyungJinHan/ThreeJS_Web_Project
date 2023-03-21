@@ -1,11 +1,12 @@
 import React from "react";
 import { useState, useRef } from "react";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { toast, Toaster } from "react-hot-toast";
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,9 +17,63 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleSubmit = (e) => {};
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Hyung-Jin Han",
+          from_email: form.email,
+          to_email: "han1210_36@naver.com",
+          message: form.message,
+        },
+        "p83Af7b78D3ycXZmF"
+      )
+      .then(
+        () => {
+          setLoading(false);
+
+          toast.success("I will get back to you ASAP!", {
+            style: {
+              background: "#151030", // #8c6dfd
+              color: "white",
+            },
+            icon: "😊",
+          });
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+
+          console.log(error);
+
+          toast.error("Something is wrong.", {
+            style: {
+              background: "#37b3ed", // #8c6dfd
+              color: "white",
+            },
+            icon: "😥",
+          });
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -34,6 +89,8 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
+          <Toaster position="top-center" reverseOrder={false} />
+
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input

@@ -22,14 +22,14 @@ const Ball = (props) => {
           color="#fff8eb"
           polygonOffset
           polygonOffsetFactor={-5}
-          // flatShading
+          flatShading
         />
 
         <Decal
           position={[0, 0, 1]}
           rotation={[2 * Math.PI, 0, 6.25]}
           map={decal}
-          // flatShading
+          flatShading
         />
       </mesh>
     </Float>
@@ -39,7 +39,7 @@ const Ball = (props) => {
 const BallCanvas = ({ icon }) => {
   return (
     <Canvas
-      frameloop="demand"
+      frameloop="always"
       gl={{ preserveDrawingBuffer: true }}
       // 특정한 최적화 수행을 막지만 WebGL이 캔버스를 지우지 않도록 하는 작업
     >

@@ -16,6 +16,7 @@
     "maath": "^0.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.0",
     "react-parallax-tilt": "^1.7.118",
     "react-router-dom": "^6.9.0",
     "react-simple-typewriter": "^5.0.1",
