@@ -35,7 +35,7 @@ import aiSchool from "./company/aiSchool.png";
 import chosun from "./company/chosun.jpg";
 import drone from "./company/drone.jpg";
 import ai900 from "./company/ai900.png";
-import kais from "./company/kais.png";
+import kais from "./company/kaisIcon.png";
 import kiitBg from "./company/kiitBg.png";
 import ts from "./company/ts.jpg";
 
