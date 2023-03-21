@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const [name, nameCount] = useTypewriter({
-    words: ["Hyung-Jin Han", "Portfoilo"], // (・∧‐)ゞ
+    words: ["Hyung-Jin Han"], // (・∧‐)ゞ
     loop: true,
     delaySpeed: 500,
   });
