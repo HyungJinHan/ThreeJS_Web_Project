@@ -10,27 +10,37 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import notion from "./tech/notion.png";
+import python from "./tech/python.png";
+import next from "./tech/next.svg";
+import firebase from "./tech/firebase.png";
+import mysql from "./tech/mysql.png";
+import electron from "./tech/electron.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import aiSchool from "./company/aiSchool.png";
+import chosun from "./company/chosun.jpg";
+import drone from "./company/drone.jpg";
+import ai900 from "./company/ai900.png";
+import kais from "./company/kais.png";
+import kiitBg from "./company/kiitBg.png";
+import ts from "./company/ts.jpg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import airbnb from "./airbnb.svg";
+import chatGpt from "./chatGpt.svg";
+import crowdFunding from "./crowdFunding.png";
+import deliveryBee from "./deliveryBee.svg";
+import firebaseChat from "./firebaseChat.svg";
+import moogle from "./moogle.svg";
+import soloFitness from "./soloFitness.svg";
 
 export {
   logo,
@@ -44,23 +54,33 @@ export {
   menu,
   close,
   css,
-  docker,
   figma,
   git,
   html,
   javascript,
-  mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  notion,
+  python,
+  next,
+  firebase,
+  mysql,
+  electron,
+  airbnb,
+  chatGpt,
+  crowdFunding,
+  deliveryBee,
+  firebaseChat,
+  moogle,
+  soloFitness,
+  aiSchool,
+  chosun,
+  drone,
+  ai900,
+  kais,
+  kiitBg,
+  ts,
 };
