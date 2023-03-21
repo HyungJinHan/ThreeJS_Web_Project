@@ -10,11 +10,19 @@ const Computers = () => {
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
       <pointLight intensity={1} />
+      <spotLight
+        position={[0, 50, 10]}
+        angle={0.12}
+        penumbra={1}
+        intensity={1}
+        castShadow
+        shadow-mapSize={1024}
+      />
       <primitive
         object={computer.scene}
         scale={0.75}
         position={[0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        rotation={[-0.01, -0.2, -0.05]}
       />
     </mesh>
   );
@@ -29,7 +37,7 @@ const ComputersCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
       // 특정한 최적화 수행을 막지만 WebGL이 캔버스를 지우지 않도록 하는 작업
     >
-      <Suspense>
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
