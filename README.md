@@ -1,4 +1,4 @@
-# ThreeJS Web Project
+# ThreeJS Web Portfolio
 
 <!-- 3D 모델링 사이트 : https://sketchfab.com/ -->
 
