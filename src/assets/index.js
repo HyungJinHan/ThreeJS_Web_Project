@@ -38,7 +38,7 @@ import ai900 from "./company/ai900.png";
 import kais from "./company/kaisIcon.png";
 import kiitBg from "./company/kiitBg.png";
 import ts from "./company/ts.jpg";
-import odn from "./company/odn.jpg";
+import odn from "./company/odn.png";
 
 import airbnb from "./airbnb.svg";
 import chatGpt from "./chatGpt.svg";
