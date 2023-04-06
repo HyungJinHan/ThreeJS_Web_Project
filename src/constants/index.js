@@ -38,6 +38,7 @@ import {
   linkedin,
   githubFrame,
   facebook,
+  odn,
 } from "../assets";
 
 export const navLinks = [
@@ -241,6 +242,14 @@ const experiences = [
       "Python의 다양한 패키지를 통한 AI 모델링의 원리 이해 및 AI 모델을 활용한 프로젝트 개발을 통한 교육을 진행",
       "기업 연계형 프로젝트 진행을 통한 현업 중심의 개발 방식을 습득",
     ],
+  },
+  {
+    title: "주식회사 ODN 프론트엔드 개발자 재직",
+    company_name: "주식회사 ODN",
+    icon: odn,
+    iconBg: "#383E56",
+    date: "2022.03 - Current",
+    points: ["주식회사 ODN의 프론테엔드 개발자로 재직 중"],
   },
 ];
 
