@@ -248,7 +248,7 @@ const experiences = [
     company_name: "주식회사 ODN",
     icon: odn,
     iconBg: "#E6DEDD",
-    date: "2022.03 - Current",
+    date: "2023.03 - Current",
     points: ["주식회사 ODN의 프론테엔드 개발자로 재직 중"],
   },
 ];
