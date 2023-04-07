@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { Rhino3dmLoader } from "three/examples/jsm/loaders/3DMLoader";
+import { Rhino3dmLoader } from "three-stdlib";
 import CanvasLoader from "../Loader";
 
 function Model({ url, ...props }) {

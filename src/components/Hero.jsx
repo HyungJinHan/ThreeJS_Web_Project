@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas, ModelTest as BoatModel } from "./canvas";
+import { ComputersCanvas, ModelTest as IJNnagato, Trident } from "./canvas";
 
 const Hero = () => {
   return (
@@ -27,7 +27,8 @@ const Hero = () => {
       </div>
 
       <ComputersCanvas />
-      {/* <BoatModel /> */}
+      {/* <IJNnagato /> */}
+      {/* <Trident /> */}
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
