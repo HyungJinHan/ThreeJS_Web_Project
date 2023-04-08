@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { Rhino3dmLoader } from "three-stdlib";
@@ -11,9 +11,16 @@ function Model({ url, ...props }) {
 
   return (
     <mesh>
-      <ambientLight intensity={0.3} />
-      <spotLight
-        position={[-100, 50, 150]}
+      <hemisphereLight
+        intensity={0.15}
+        position={[50, 10, 180]}
+        groundColor="white"
+      />
+      <pointLight intensity={0.8} position={[-100, 10, -150]} />
+      <pointLight intensity={0.8} position={[100, 10, -150]} />
+      {/* <ambientLight intensity={0.3} /> */}
+      {/* <spotLight
+        position={[-100, 10, 150]}
         angle={0.12}
         penumbra={1}
         intensity={0.7}
@@ -21,13 +28,13 @@ function Model({ url, ...props }) {
         shadowMapSize={1024}
       />
       <spotLight
-        position={[100, 50, 150]}
+        position={[100, 10, 150]}
         angle={0.12}
         penumbra={1}
         intensity={0.7}
         castShadow
         shadowMapSize={1024}
-      />
+      /> */}
       <primitive
         object={model}
         scale={0.02}
@@ -39,26 +46,64 @@ function Model({ url, ...props }) {
 }
 
 function Trident() {
+  const [boatColor, setBoatColor] = useState("default");
+
   return (
-    <Canvas
-      frameloop="demand"
-      // shadows
-      camera={{ position: [200, 3, 5], fov: 20 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={true}
-          // maxPolarAngle={Math.PI / 2}
-          // minPolarAngle={Math.PI / 2}
-          autoRotate
-          autoRotateSpeed={1}
-          rotateSpeed={0.3}
-        />
-        <Model url="/trident_move.3dm" />
-        {/* <Model url="/IJNnagato6.3dm" /> */}
-      </Suspense>
-    </Canvas>
+    <>
+      <Canvas
+        frameloop="demand"
+        // shadows
+        camera={{ position: [200, 3, 5], fov: 20 }}
+        gl={{ preserveDrawingBuffer: true }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enableZoom={true}
+            // maxPolarAngle={Math.PI / 2}
+            // minPolarAngle={Math.PI / 2}
+            autoRotate
+            autoRotateSpeed={1}
+            rotateSpeed={0.3}
+          />
+          <Model url={`/trident_${boatColor}.3dm`} />
+        </Suspense>
+      </Canvas>
+
+      <input
+        type="button"
+        value="초기화"
+        onClick={() => {
+          setBoatColor("default");
+        }}
+      />
+      <br />
+      <br />
+      <input
+        type="button"
+        value="black"
+        onClick={() => {
+          setBoatColor("black");
+        }}
+      />
+      <br />
+      <br />
+      <input
+        type="button"
+        value="blue"
+        onClick={() => {
+          setBoatColor("blue");
+        }}
+      />
+      <br />
+      <br />
+      <input
+        type="button"
+        value="red"
+        onClick={() => {
+          setBoatColor("red");
+        }}
+      />
+    </>
   );
 }
 
