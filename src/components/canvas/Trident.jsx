@@ -16,8 +16,9 @@ function Model({ url, ...props }) {
         position={[50, 10, 180]}
         groundColor="white"
       />
-      <pointLight intensity={0.8} position={[-100, 10, -150]} />
-      <pointLight intensity={0.8} position={[100, 10, -150]} />
+      <pointLight intensity={0.4} position={[-100, 10, -150]} />
+      <pointLight intensity={0.4} position={[100, 10, -150]} />
+      <pointLight intensity={0.4} position={[100, 15, 150]} />
       {/* <ambientLight intensity={0.3} /> */}
       {/* <spotLight
         position={[-100, 10, 150]}
@@ -68,7 +69,6 @@ function Trident() {
           <Model url={`/trident_${boatColor}.3dm`} />
         </Suspense>
       </Canvas>
-
       <input
         type="button"
         value="초기화"
@@ -76,31 +76,36 @@ function Trident() {
           setBoatColor("default");
         }}
       />
-      <br />
-      <br />
+      &nbsp;&nbsp;
       <input
         type="button"
-        value="black"
+        value="Black"
         onClick={() => {
           setBoatColor("black");
         }}
       />
-      <br />
-      <br />
+      &nbsp;&nbsp;
       <input
         type="button"
-        value="blue"
+        value="Blue"
         onClick={() => {
           setBoatColor("blue");
         }}
       />
-      <br />
-      <br />
+      &nbsp;&nbsp;
       <input
         type="button"
-        value="red"
+        value="Red"
         onClick={() => {
           setBoatColor("red");
+        }}
+      />
+      &nbsp;&nbsp;
+      <input
+        type="button"
+        value="Yellow"
+        onClick={() => {
+          setBoatColor("yellow");
         }}
       />
     </>
