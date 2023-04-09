@@ -48,6 +48,11 @@ function Model({ url, ...props }) {
 
 function Trident() {
   const [boatColor, setBoatColor] = useState("default");
+  const [borderDefault, setBorderDefault] = useState("none");
+  const [borderBlack, setBorderBlack] = useState("none");
+  const [borderBlue, setBorderBlue] = useState("none");
+  const [borderRed, setBorderRed] = useState("none");
+  const [borderYellow, setBorderYellow] = useState("none");
 
   return (
     <>
@@ -69,43 +74,103 @@ function Trident() {
           <Model url={`/trident_${boatColor}.3dm`} />
         </Suspense>
       </Canvas>
-      <input
-        type="button"
-        value="초기화"
+      <div
+        style={{
+          border: borderDefault,
+          width: "20px",
+          height: "20px",
+          borderRadius: "100%",
+          cursor: "pointer",
+          backgroundColor: "#707070",
+          display: "inline-block",
+        }}
         onClick={() => {
           setBoatColor("default");
+          setBorderDefault("3px solid white");
+          setBorderBlack("none");
+          setBorderBlue("none");
+          setBorderRed("none");
+          setBorderYellow("none");
         }}
       />
       &nbsp;&nbsp;
-      <input
-        type="button"
-        value="Black"
+      <div
+        style={{
+          border: borderBlack,
+          width: "20px",
+          height: "20px",
+          borderRadius: "100%",
+          cursor: "pointer",
+          backgroundColor: "#121212",
+          display: "inline-block",
+        }}
         onClick={() => {
           setBoatColor("black");
+          setBorderBlack("3px solid white");
+          setBorderDefault("none");
+          setBorderBlue("none");
+          setBorderRed("none");
+          setBorderYellow("none");
         }}
       />
       &nbsp;&nbsp;
-      <input
-        type="button"
-        value="Blue"
+      <div
+        style={{
+          border: borderBlue,
+          width: "20px",
+          height: "20px",
+          borderRadius: "100%",
+          cursor: "pointer",
+          backgroundColor: "#2A3E77",
+          display: "inline-block",
+        }}
         onClick={() => {
           setBoatColor("blue");
+          setBorderBlue("3px solid white");
+          setBorderDefault("none");
+          setBorderBlack("none");
+          setBorderRed("none");
+          setBorderYellow("none");
         }}
       />
       &nbsp;&nbsp;
-      <input
-        type="button"
-        value="Red"
+      <div
+        style={{
+          border: borderRed,
+          width: "20px",
+          height: "20px",
+          borderRadius: "100%",
+          cursor: "pointer",
+          backgroundColor: "#972723",
+          display: "inline-block",
+        }}
         onClick={() => {
           setBoatColor("red");
+          setBorderRed("3px solid white");
+          setBorderDefault("none");
+          setBorderBlack("none");
+          setBorderBlue("none");
+          setBorderYellow("none");
         }}
       />
       &nbsp;&nbsp;
-      <input
-        type="button"
-        value="Yellow"
+      <div
+        style={{
+          border: borderYellow,
+          width: "20px",
+          height: "20px",
+          borderRadius: "100%",
+          cursor: "pointer",
+          backgroundColor: "#AC8B41",
+          display: "inline-block",
+        }}
         onClick={() => {
           setBoatColor("yellow");
+          setBorderYellow("3px solid white");
+          setBorderDefault("none");
+          setBorderBlack("none");
+          setBorderBlue("none");
+          setBorderRed("none");
         }}
       />
     </>
