@@ -16,11 +16,11 @@ function Model({ url, ...props }) {
         position={[50, 10, 180]}
         groundColor="white"
       />
-      <pointLight intensity={0.4} position={[-100, 10, -150]} />
-      <pointLight intensity={0.4} position={[100, 10, -150]} />
-      <pointLight intensity={0.4} position={[100, 15, 150]} />
-      {/* <ambientLight intensity={0.3} /> */}
-      {/* <spotLight
+      <pointLight intensity={0.8} position={[-100, 10, -150]} />
+      <pointLight intensity={0.8} position={[100, 10, -150]} />
+      <pointLight intensity={0.8} position={[200, 15, 150]} />
+      {/* <ambientLight intensity={0.3} />
+      <spotLight
         position={[-100, 10, 150]}
         angle={0.12}
         penumbra={1}
@@ -48,7 +48,7 @@ function Model({ url, ...props }) {
 
 function Trident() {
   const [boatColor, setBoatColor] = useState("default");
-  const [borderDefault, setBorderDefault] = useState("none");
+  const [borderDefault, setBorderDefault] = useState("3px solid white");
   const [borderBlack, setBorderBlack] = useState("none");
   const [borderBlue, setBorderBlue] = useState("none");
   const [borderRed, setBorderRed] = useState("none");
