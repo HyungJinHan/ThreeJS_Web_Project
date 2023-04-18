@@ -39,6 +39,7 @@ import {
   githubFrame,
   facebook,
   odn,
+  threejs_white,
 } from "../assets";
 
 export const navLinks = [
@@ -116,9 +117,13 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
     name: "Three JS",
-    icon: threejs,
+    icon: threejs_white,
   },
   {
     name: "Electron",
@@ -178,13 +183,7 @@ const experiences = [
     icon: drone,
     iconBg: "#383E56",
     date: "2020.03 - 2022.01 (총 1년 11개월)",
-    points: [
-      "자격증 반 교육 교관으로 활동",
-      "드론 조립 및 센서 조정 등의 드론 정비 및 개발",
-      "초, 고등학교 드론 방과후 강사로써 활동",
-      "3D 모델링 및 3D 프린터를 통한 회사 자체 굿즈를 제작",
-      "유튜브 콘텐츠 기획 및 제작 보조, 검토를 총괄",
-    ],
+    points: ["자격증 반 교육 교관으로 활동", "드론 조립 및 센서 조정 등의 드론 정비 및 개발", "초, 고등학교 드론 방과후 강사로써 활동", "3D 모델링 및 3D 프린터를 통한 회사 자체 굿즈를 제작", "유튜브 콘텐츠 기획 및 제작 보조, 검토를 총괄"],
   },
   {
     title: "학술대회 논문 제출 / 구두 발표",
@@ -206,13 +205,7 @@ const experiences = [
     icon: ai900,
     iconBg: "#383E56",
     date: "2022.11",
-    points: [
-      "AI 워크로드 및 고려사항에 대한 공부를 통해 자격증을 취득",
-      "머신러닝의 기본 원리에 대한 이해",
-      "AI 모델 중 Computer Vision의 특징에 대한 개념을 정리",
-      "자연어 처리의 특징에 대한 이해",
-      "대화형 AI 워크로드에 대한 연구, 공부",
-    ],
+    points: ["AI 워크로드 및 고려사항에 대한 공부를 통해 자격증을 취득", "머신러닝의 기본 원리에 대한 이해", "AI 모델 중 Computer Vision의 특징에 대한 개념을 정리", "자연어 처리의 특징에 대한 이해", "대화형 AI 워크로드에 대한 연구, 공부"],
   },
   {
     title: "학술대회 논문 제출 / 구두 발표",
@@ -256,24 +249,21 @@ const experiences = [
 // 평가
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    testimonial: "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -303,10 +293,8 @@ const projects = [
       },
     ],
     image: soloFitness,
-    source_code_link:
-      "https://github.com/HyungJinHan/AI_trainer_SoloFitness_Project",
-    detail_link:
-      "https://www.notion.so/hyungjinhan/AI-Trainer-96c4781a92c449269a4b9aed45110ec3",
+    source_code_link: "https://github.com/HyungJinHan/AI_trainer_SoloFitness_Project",
+    detail_link: "https://www.notion.so/hyungjinhan/AI-Trainer-96c4781a92c449269a4b9aed45110ec3",
   },
   {
     name: "ChatGPT Messenger",
@@ -329,8 +317,7 @@ const projects = [
     ],
     image: chatGpt,
     source_code_link: "https://github.com/HyungJinHan/ChatGPT_Messenger",
-    detail_link:
-      "https://www.notion.so/hyungjinhan/ChatGPT-Messenger-64cdb067fad74f62b2465c7924a7cc4e",
+    detail_link: "https://www.notion.so/hyungjinhan/ChatGPT-Messenger-64cdb067fad74f62b2465c7924a7cc4e",
     deploy_link: "https://chatgpt-messenger-hyungjinhan.vercel.app/",
   },
   {
@@ -354,8 +341,7 @@ const projects = [
     ],
     image: deliveryBee,
     source_code_link: "https://github.com/HyungJinHan/DeliveryBee_Project",
-    detail_link:
-      "https://www.notion.so/hyungjinhan/BEE-3cb0ec9c54504933b14de75f9945a372",
+    detail_link: "https://www.notion.so/hyungjinhan/BEE-3cb0ec9c54504933b14de75f9945a372",
   },
   {
     name: "Crowdfunding 사이트",
@@ -377,10 +363,8 @@ const projects = [
       },
     ],
     image: crowdFunding,
-    source_code_link:
-      "https://github.com/HyungJinHan/Web3_Crowdfunding_Project",
-    detail_link:
-      "https://www.notion.so/hyungjinhan/thiredweb-Crowdfunding-dccab699ae0f4e35a5195ec282ca1d60",
+    source_code_link: "https://github.com/HyungJinHan/Web3_Crowdfunding_Project",
+    detail_link: "https://www.notion.so/hyungjinhan/thiredweb-Crowdfunding-dccab699ae0f4e35a5195ec282ca1d60",
     deploy_link: "https://web3-crowdfunding-project-two.vercel.app/",
   },
   {
@@ -404,8 +388,7 @@ const projects = [
     ],
     image: firebaseChat,
     source_code_link: "https://github.com/HyungJinHan/firebase_chat_site",
-    detail_link:
-      "https://www.notion.so/hyungjinhan/Firebase-081db98431114e13b7f5d61bd77038d3",
+    detail_link: "https://www.notion.so/hyungjinhan/Firebase-081db98431114e13b7f5d61bd77038d3",
     deploy_link: "https://github.com/HyungJinHan/firebase_chat_site/releases",
   },
   {
@@ -429,8 +412,7 @@ const projects = [
     ],
     image: airbnb,
     source_code_link: "https://github.com/HyungJinHan/Airbnb_Clone_Project",
-    detail_link:
-      "https://www.notion.so/hyungjinhan/Airbnb-Clone-Site-c4392ee163e94f53af3d58ecff57996c",
+    detail_link: "https://www.notion.so/hyungjinhan/Airbnb-Clone-Site-c4392ee163e94f53af3d58ecff57996c",
     deploy_link: "https://airbnb-clone-project-bay.vercel.app/",
   },
   {
@@ -454,8 +436,7 @@ const projects = [
     ],
     image: moogle,
     source_code_link: "https://github.com/HyungJinHan/OpenAPI_Toy_Project",
-    detail_link:
-      "https://www.notion.so/hyungjinhan/Moggle-4ecea3f30dbe431b8d688afcc12b1f8b",
+    detail_link: "https://www.notion.so/hyungjinhan/Moggle-4ecea3f30dbe431b8d688afcc12b1f8b",
   },
 ];
 

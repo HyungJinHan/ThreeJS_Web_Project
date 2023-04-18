@@ -24,6 +24,7 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import threejs_white from "./tech/threejs_white.svg";
 import notion from "./tech/notion.png";
 import python from "./tech/python.png";
 import next from "./tech/next.svg";
@@ -95,4 +96,5 @@ export {
   kiitBg,
   ts,
   odn,
+  threejs_white,
 };
