@@ -416,7 +416,7 @@ const projects = [
     deploy_link: "https://airbnb-clone-project-bay.vercel.app/",
   },
   {
-    name: "영화 검색 사이트 Moggle",
+    name: "영화 검색 사이트 Moogle",
     description:
       // "네이버 검색 API를 활용하여 간단한 토이 프로젝트로 제작한 영화 검색 사이트입니다. 다양한 영화 속 자신이 원하는 영화를 찾을 수 있도록 국가, 장르 등 다양한 선택지를 제공하여 영화를 검색할 수 있게 제작했습니다. 또한 구글을 레퍼런스로 하여 구글 검색과 비슷한 느낌으로 UI를 설계했습니다.",
       "네이버 검색 API를 활용하여 간단한 토이 프로젝트로 제작한 영화 검색 사이트로, 다양한 검색 옵션을 통해 보다 정확한 영화 검색이 가능합니다.",
@@ -436,7 +436,7 @@ const projects = [
     ],
     image: moogle,
     source_code_link: "https://github.com/HyungJinHan/OpenAPI_Toy_Project",
-    detail_link: "https://www.notion.so/hyungjinhan/Moggle-4ecea3f30dbe431b8d688afcc12b1f8b",
+    detail_link: "https://www.notion.so/hyungjinhan/Moogle-4ecea3f30dbe431b8d688afcc12b1f8b",
   },
 ];
 
