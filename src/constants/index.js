@@ -66,7 +66,7 @@ const services = [
   {
     title: "My Tech Blog",
     icon: velog,
-    link: "https://velog.io/@hyungjin_han",
+    link: "https://hyungjinhan.github.io/",
   },
   {
     title: "My LinkedIn",

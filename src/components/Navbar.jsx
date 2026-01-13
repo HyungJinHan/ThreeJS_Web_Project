@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { myLogo, menu, close } from "../assets";
+import { myNotionLogo, menu, close } from "../assets";
 import { Link } from "react-router-dom";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
@@ -34,7 +34,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={myLogo} alt="logo" className="w-12 h-12 object-contain" />
+          <img src={myNotionLogo} alt="logo" className="w-12 h-12 object-contain" />
 
           <p className="text-white text-[18px] font-bold cursor-pointer">
             <span className="blue-text-gradient">{name}</span>

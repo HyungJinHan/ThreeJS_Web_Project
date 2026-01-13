@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import myLogo from "./myLogo.svg";
+import myNotionLogo from "./myLogo.png";
 import textLogo from "./textLogo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -52,6 +53,7 @@ import soloFitness from "./soloFitness.svg";
 export {
   logo,
   myLogo,
+  myNotionLogo,
   textLogo,
   backend,
   creator,
