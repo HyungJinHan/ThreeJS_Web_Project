@@ -129,14 +129,14 @@ const technologies = [
     name: "Electron",
     icon: electron,
   },
-  {
-    name: "Firebase",
-    icon: firebase,
-  },
-  {
-    name: "MySQL",
-    icon: mysql,
-  },
+  // {
+  //   name: "Firebase",
+  //   icon: firebase,
+  // },
+  // {
+  //   name: "MySQL",
+  //   icon: mysql,
+  // },
   // {
   //   name: "git",
   //   icon: git,
@@ -145,10 +145,10 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  // {
-  //   name: "Notion",
-  //   icon: notion,
-  // },
+  {
+    name: "Notion",
+    icon: notion,
+  },
 ];
 
 // 경력
